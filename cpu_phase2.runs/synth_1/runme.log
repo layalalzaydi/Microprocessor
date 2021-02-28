@@ -1,0 +1,454 @@
+
+*** Running vivado
+    with args -log Processor.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source Processor.tcl
+
+
+****** Vivado v2019.1 (64-bit)
+  **** SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+  **** IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source Processor.tcl -notrace
+Command: synth_design -top Processor -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 9868 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 784.410 ; gain = 178.086
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'Processor' [C:/Users/giuli/Downloads/cpu_phase2_2/cpu_phase2/cpu_phase2.srcs/sources_1/new/Processor.vhd:11]
+INFO: [Synth 8-3491] module 'Reg' declared at 'C:/Users/giuli/Downloads/cpu_phase2_2/cpu_phase2/cpu_phase2.srcs/sources_1/new/Reg.vhd:4' bound to instance 'AReg' of component 'Reg' [C:/Users/giuli/Downloads/cpu_phase2_2/cpu_phase2/cpu_phase2.srcs/sources_1/new/Processor.vhd:127]
+INFO: [Synth 8-638] synthesizing module 'Reg' [C:/Users/giuli/Downloads/cpu_phase2_2/cpu_phase2/cpu_phase2.srcs/sources_1/new/Reg.vhd:10]
+INFO: [Synth 8-256] done synthesizing module 'Reg' (1#1) [C:/Users/giuli/Downloads/cpu_phase2_2/cpu_phase2/cpu_phase2.srcs/sources_1/new/Reg.vhd:10]
+INFO: [Synth 8-3491] module 'Reg' declared at 'C:/Users/giuli/Downloads/cpu_phase2_2/cpu_phase2/cpu_phase2.srcs/sources_1/new/Reg.vhd:4' bound to instance 'BReg' of component 'Reg' [C:/Users/giuli/Downloads/cpu_phase2_2/cpu_phase2/cpu_phase2.srcs/sources_1/new/Processor.vhd:132]
+INFO: [Synth 8-3491] module 'Reg' declared at 'C:/Users/giuli/Downloads/cpu_phase2_2/cpu_phase2/cpu_phase2.srcs/sources_1/new/Reg.vhd:4' bound to instance 'ALUout' of component 'Reg' [C:/Users/giuli/Downloads/cpu_phase2_2/cpu_phase2/cpu_phase2.srcs/sources_1/new/Processor.vhd:137]
+INFO: [Synth 8-3491] module 'InstructionReg' declared at 'C:/Users/giuli/Downloads/cpu_phase2_2/cpu_phase2/cpu_phase2.srcs/sources_1/new/InstructionReg.vhd:4' bound to instance 'IR' of component 'InstructionReg' [C:/Users/giuli/Downloads/cpu_phase2_2/cpu_phase2/cpu_phase2.srcs/sources_1/new/Processor.vhd:142]
+INFO: [Synth 8-638] synthesizing module 'InstructionReg' [C:/Users/giuli/Downloads/cpu_phase2_2/cpu_phase2/cpu_phase2.srcs/sources_1/new/InstructionReg.vhd:10]
+INFO: [Synth 8-256] done synthesizing module 'InstructionReg' (2#1) [C:/Users/giuli/Downloads/cpu_phase2_2/cpu_phase2/cpu_phase2.srcs/sources_1/new/InstructionReg.vhd:10]
+INFO: [Synth 8-3491] module 'Reg' declared at 'C:/Users/giuli/Downloads/cpu_phase2_2/cpu_phase2/cpu_phase2.srcs/sources_1/new/Reg.vhd:4' bound to instance 'MDR' of component 'Reg' [C:/Users/giuli/Downloads/cpu_phase2_2/cpu_phase2/cpu_phase2.srcs/sources_1/new/Processor.vhd:148]
+INFO: [Synth 8-3491] module 'PC' declared at 'C:/Users/giuli/Downloads/cpu_phase2_2/cpu_phase2/cpu_phase2.srcs/sources_1/new/PC.vhd:4' bound to instance 'PCMap' of component 'PC' [C:/Users/giuli/Downloads/cpu_phase2_2/cpu_phase2/cpu_phase2.srcs/sources_1/new/Processor.vhd:154]
+INFO: [Synth 8-638] synthesizing module 'PC' [C:/Users/giuli/Downloads/cpu_phase2_2/cpu_phase2/cpu_phase2.srcs/sources_1/new/PC.vhd:10]
+INFO: [Synth 8-256] done synthesizing module 'PC' (3#1) [C:/Users/giuli/Downloads/cpu_phase2_2/cpu_phase2/cpu_phase2.srcs/sources_1/new/PC.vhd:10]
+INFO: [Synth 8-3491] module 'Mux2to1_16bit' declared at 'C:/Users/giuli/Downloads/cpu_phase2_2/cpu_phase2/cpu_phase2.srcs/sources_1/new/Mux2to1.vhd:4' bound to instance 'PCMux' of component 'Mux2to1_16bit' [C:/Users/giuli/Downloads/cpu_phase2_2/cpu_phase2/cpu_phase2.srcs/sources_1/new/Processor.vhd:160]
+INFO: [Synth 8-638] synthesizing module 'Mux2to1_16bit' [C:/Users/giuli/Downloads/cpu_phase2_2/cpu_phase2/cpu_phase2.srcs/sources_1/new/Mux2to1.vhd:11]
+INFO: [Synth 8-226] default block is never used [C:/Users/giuli/Downloads/cpu_phase2_2/cpu_phase2/cpu_phase2.srcs/sources_1/new/Mux2to1.vhd:15]
+INFO: [Synth 8-256] done synthesizing module 'Mux2to1_16bit' (4#1) [C:/Users/giuli/Downloads/cpu_phase2_2/cpu_phase2/cpu_phase2.srcs/sources_1/new/Mux2to1.vhd:11]
+INFO: [Synth 8-3491] module 'Memory' declared at 'C:/Users/giuli/Downloads/cpu_phase2_2/cpu_phase2/cpu_phase2.srcs/sources_1/new/Memory.vhd:5' bound to instance 'MemMap' of component 'Memory' [C:/Users/giuli/Downloads/cpu_phase2_2/cpu_phase2/cpu_phase2.srcs/sources_1/new/Processor.vhd:166]
+INFO: [Synth 8-638] synthesizing module 'Memory' [C:/Users/giuli/Downloads/cpu_phase2_2/cpu_phase2/cpu_phase2.srcs/sources_1/new/Memory.vhd:14]
+INFO: [Synth 8-256] done synthesizing module 'Memory' (5#1) [C:/Users/giuli/Downloads/cpu_phase2_2/cpu_phase2/cpu_phase2.srcs/sources_1/new/Memory.vhd:14]
+INFO: [Synth 8-3491] module 'ControlUnit' declared at 'C:/Users/giuli/Downloads/cpu_phase2_2/cpu_phase2/cpu_phase2.srcs/sources_1/new/ControlUnit.vhd:5' bound to instance 'ControlMap' of component 'ControlUnit' [C:/Users/giuli/Downloads/cpu_phase2_2/cpu_phase2/cpu_phase2.srcs/sources_1/new/Processor.vhd:178]
+INFO: [Synth 8-638] synthesizing module 'ControlUnit' [C:/Users/giuli/Downloads/cpu_phase2_2/cpu_phase2/cpu_phase2.srcs/sources_1/new/ControlUnit.vhd:11]
+INFO: [Synth 8-3491] module 'LogicMapping' declared at 'C:/Users/giuli/Downloads/cpu_phase2_2/cpu_phase2/cpu_phase2.srcs/sources_1/new/LogicMapping.vhd:4' bound to instance 'Decoder' of component 'LogicMapping' [C:/Users/giuli/Downloads/cpu_phase2_2/cpu_phase2/cpu_phase2.srcs/sources_1/new/ControlUnit.vhd:68]
+INFO: [Synth 8-638] synthesizing module 'LogicMapping' [C:/Users/giuli/Downloads/cpu_phase2_2/cpu_phase2/cpu_phase2.srcs/sources_1/new/LogicMapping.vhd:9]
+INFO: [Synth 8-256] done synthesizing module 'LogicMapping' (6#1) [C:/Users/giuli/Downloads/cpu_phase2_2/cpu_phase2/cpu_phase2.srcs/sources_1/new/LogicMapping.vhd:9]
+INFO: [Synth 8-3491] module 'Mux3to1_8bit' declared at 'C:/Users/giuli/Downloads/cpu_phase2_2/cpu_phase2/cpu_phase2.srcs/sources_1/new/Mux3to1_8bit.vhd:5' bound to instance 'Mux' of component 'Mux3to1_8bit' [C:/Users/giuli/Downloads/cpu_phase2_2/cpu_phase2/cpu_phase2.srcs/sources_1/new/ControlUnit.vhd:72]
+INFO: [Synth 8-638] synthesizing module 'Mux3to1_8bit' [C:/Users/giuli/Downloads/cpu_phase2_2/cpu_phase2/cpu_phase2.srcs/sources_1/new/Mux3to1_8bit.vhd:13]
+INFO: [Synth 8-256] done synthesizing module 'Mux3to1_8bit' (7#1) [C:/Users/giuli/Downloads/cpu_phase2_2/cpu_phase2/cpu_phase2.srcs/sources_1/new/Mux3to1_8bit.vhd:13]
+INFO: [Synth 8-3491] module 'MicroPCReg' declared at 'C:/Users/giuli/Downloads/cpu_phase2_2/cpu_phase2/cpu_phase2.srcs/sources_1/new/MicroPCReg.vhd:6' bound to instance 'PCReg' of component 'MicroPCReg' [C:/Users/giuli/Downloads/cpu_phase2_2/cpu_phase2/cpu_phase2.srcs/sources_1/new/ControlUnit.vhd:79]
+INFO: [Synth 8-638] synthesizing module 'MicroPCReg' [C:/Users/giuli/Downloads/cpu_phase2_2/cpu_phase2/cpu_phase2.srcs/sources_1/new/MicroPCReg.vhd:12]
+INFO: [Synth 8-256] done synthesizing module 'MicroPCReg' (8#1) [C:/Users/giuli/Downloads/cpu_phase2_2/cpu_phase2/cpu_phase2.srcs/sources_1/new/MicroPCReg.vhd:12]
+	Parameter Dwidth bound to: 21 - type: integer 
+	Parameter Awidth bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'MicroCode' declared at 'C:/Users/giuli/Downloads/cpu_phase2_2/cpu_phase2/cpu_phase2.srcs/sources_1/new/MicroCode.vhd:6' bound to instance 'MicroOpStore' of component 'MicroCode' [C:/Users/giuli/Downloads/cpu_phase2_2/cpu_phase2/cpu_phase2.srcs/sources_1/new/ControlUnit.vhd:84]
+INFO: [Synth 8-638] synthesizing module 'MicroCode' [C:/Users/giuli/Downloads/cpu_phase2_2/cpu_phase2/cpu_phase2.srcs/sources_1/new/MicroCode.vhd:14]
+	Parameter Dwidth bound to: 21 - type: integer 
+	Parameter Awidth bound to: 8 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'MicroCode' (9#1) [C:/Users/giuli/Downloads/cpu_phase2_2/cpu_phase2/cpu_phase2.srcs/sources_1/new/MicroCode.vhd:14]
+INFO: [Synth 8-3491] module 'Incrementer' declared at 'C:/Users/giuli/Downloads/cpu_phase2_2/cpu_phase2/cpu_phase2.srcs/sources_1/new/Incrementer.vhd:5' bound to instance 'Incr' of component 'Incrementer' [C:/Users/giuli/Downloads/cpu_phase2_2/cpu_phase2/cpu_phase2.srcs/sources_1/new/ControlUnit.vhd:88]
+INFO: [Synth 8-638] synthesizing module 'Incrementer' [C:/Users/giuli/Downloads/cpu_phase2_2/cpu_phase2/cpu_phase2.srcs/sources_1/new/Incrementer.vhd:10]
+INFO: [Synth 8-256] done synthesizing module 'Incrementer' (10#1) [C:/Users/giuli/Downloads/cpu_phase2_2/cpu_phase2/cpu_phase2.srcs/sources_1/new/Incrementer.vhd:10]
+INFO: [Synth 8-256] done synthesizing module 'ControlUnit' (11#1) [C:/Users/giuli/Downloads/cpu_phase2_2/cpu_phase2/cpu_phase2.srcs/sources_1/new/ControlUnit.vhd:11]
+INFO: [Synth 8-3491] module 'Mux2to1_3bit' declared at 'C:/Users/giuli/Downloads/cpu_phase2_2/cpu_phase2/cpu_phase2.srcs/sources_1/new/Mux2to1_3bit.vhd:4' bound to instance 'WrAddrMux' of component 'Mux2to1_3bit' [C:/Users/giuli/Downloads/cpu_phase2_2/cpu_phase2/cpu_phase2.srcs/sources_1/new/Processor.vhd:183]
+INFO: [Synth 8-638] synthesizing module 'Mux2to1_3bit' [C:/Users/giuli/Downloads/cpu_phase2_2/cpu_phase2/cpu_phase2.srcs/sources_1/new/Mux2to1_3bit.vhd:11]
+INFO: [Synth 8-226] default block is never used [C:/Users/giuli/Downloads/cpu_phase2_2/cpu_phase2/cpu_phase2.srcs/sources_1/new/Mux2to1_3bit.vhd:15]
+INFO: [Synth 8-256] done synthesizing module 'Mux2to1_3bit' (12#1) [C:/Users/giuli/Downloads/cpu_phase2_2/cpu_phase2/cpu_phase2.srcs/sources_1/new/Mux2to1_3bit.vhd:11]
+INFO: [Synth 8-3491] module 'Mux2to1_16bit' declared at 'C:/Users/giuli/Downloads/cpu_phase2_2/cpu_phase2/cpu_phase2.srcs/sources_1/new/Mux2to1.vhd:4' bound to instance 'WrDataMux' of component 'Mux2to1_16bit' [C:/Users/giuli/Downloads/cpu_phase2_2/cpu_phase2/cpu_phase2.srcs/sources_1/new/Processor.vhd:189]
+INFO: [Synth 8-3491] module 'RegisterFile' declared at 'C:/Users/giuli/Downloads/cpu_phase2_2/cpu_phase2/cpu_phase2.srcs/sources_1/new/RegisterFile.vhd:5' bound to instance 'RegFile' of component 'RegisterFile' [C:/Users/giuli/Downloads/cpu_phase2_2/cpu_phase2/cpu_phase2.srcs/sources_1/new/Processor.vhd:195]
+INFO: [Synth 8-638] synthesizing module 'RegisterFile' [C:/Users/giuli/Downloads/cpu_phase2_2/cpu_phase2/cpu_phase2.srcs/sources_1/new/RegisterFile.vhd:15]
+INFO: [Synth 8-5534] Detected attribute (* ram_style = "block" *) [C:/Users/giuli/Downloads/cpu_phase2_2/cpu_phase2/cpu_phase2.srcs/sources_1/new/RegisterFile.vhd:19]
+INFO: [Synth 8-256] done synthesizing module 'RegisterFile' (13#1) [C:/Users/giuli/Downloads/cpu_phase2_2/cpu_phase2/cpu_phase2.srcs/sources_1/new/RegisterFile.vhd:15]
+INFO: [Synth 8-3491] module 'Mux2to1_16bit' declared at 'C:/Users/giuli/Downloads/cpu_phase2_2/cpu_phase2/cpu_phase2.srcs/sources_1/new/Mux2to1.vhd:4' bound to instance 'ALUMux1' of component 'Mux2to1_16bit' [C:/Users/giuli/Downloads/cpu_phase2_2/cpu_phase2/cpu_phase2.srcs/sources_1/new/Processor.vhd:205]
+INFO: [Synth 8-3491] module 'Mux3to1_16bit' declared at 'C:/Users/giuli/Downloads/cpu_phase2_2/cpu_phase2/cpu_phase2.srcs/sources_1/new/Mux3to1.vhd:4' bound to instance 'ALUMux2' of component 'Mux3to1_16bit' [C:/Users/giuli/Downloads/cpu_phase2_2/cpu_phase2/cpu_phase2.srcs/sources_1/new/Processor.vhd:212]
+INFO: [Synth 8-638] synthesizing module 'Mux3to1_16bit' [C:/Users/giuli/Downloads/cpu_phase2_2/cpu_phase2/cpu_phase2.srcs/sources_1/new/Mux3to1.vhd:12]
+INFO: [Synth 8-256] done synthesizing module 'Mux3to1_16bit' (14#1) [C:/Users/giuli/Downloads/cpu_phase2_2/cpu_phase2/cpu_phase2.srcs/sources_1/new/Mux3to1.vhd:12]
+INFO: [Synth 8-3491] module 'ALU' declared at 'C:/Users/giuli/Downloads/cpu_phase2_2/cpu_phase2/cpu_phase2.srcs/sources_1/new/ALU.vhd:6' bound to instance 'ALUmap' of component 'ALU' [C:/Users/giuli/Downloads/cpu_phase2_2/cpu_phase2/cpu_phase2.srcs/sources_1/new/Processor.vhd:219]
+INFO: [Synth 8-638] synthesizing module 'ALU' [C:/Users/giuli/Downloads/cpu_phase2_2/cpu_phase2/cpu_phase2.srcs/sources_1/new/ALU.vhd:16]
+INFO: [Synth 8-256] done synthesizing module 'ALU' (15#1) [C:/Users/giuli/Downloads/cpu_phase2_2/cpu_phase2/cpu_phase2.srcs/sources_1/new/ALU.vhd:16]
+INFO: [Synth 8-3491] module 'Mux3to1_16bit' declared at 'C:/Users/giuli/Downloads/cpu_phase2_2/cpu_phase2/cpu_phase2.srcs/sources_1/new/Mux3to1.vhd:4' bound to instance 'PCMux3ot1' of component 'Mux3to1_16bit' [C:/Users/giuli/Downloads/cpu_phase2_2/cpu_phase2/cpu_phase2.srcs/sources_1/new/Processor.vhd:228]
+INFO: [Synth 8-256] done synthesizing module 'Processor' (16#1) [C:/Users/giuli/Downloads/cpu_phase2_2/cpu_phase2/cpu_phase2.srcs/sources_1/new/Processor.vhd:11]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 850.324 ; gain = 244.000
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 850.324 ; gain = 244.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 850.324 ; gain = 244.000
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/giuli/Downloads/cpu_phase2_2/cpu_phase2/cpu_phase2.srcs/constrs_1/imports/engg_3380/master.xdc]
+Finished Parsing XDC File [C:/Users/giuli/Downloads/cpu_phase2_2/cpu_phase2/cpu_phase2.srcs/constrs_1/imports/engg_3380/master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/giuli/Downloads/cpu_phase2_2/cpu_phase2/cpu_phase2.srcs/constrs_1/imports/engg_3380/master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Processor_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/Processor_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 999.527 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.027 . Memory (MB): peak = 999.527 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 999.527 ; gain = 393.203
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 999.527 ; gain = 393.203
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 999.527 ; gain = 393.203
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-327] inferring latch for variable 'addrOut_reg' [C:/Users/giuli/Downloads/cpu_phase2_2/cpu_phase2/cpu_phase2.srcs/sources_1/new/Mux3to1_8bit.vhd:17]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 999.527 ; gain = 393.203
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     17 Bit       Adders := 2     
+	   2 Input     16 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
++---XORs : 
+	   2 Input     16 Bit         XORs := 1     
++---Registers : 
+	               16 Bit    Registers := 264   
+	                8 Bit    Registers := 1     
++---Muxes : 
+	 256 Input     21 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 3     
+	   4 Input     16 Bit        Muxes := 2     
+	   8 Input     16 Bit        Muxes := 1     
+	   4 Input      8 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	  11 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 10    
+	  11 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module Reg 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
+Module InstructionReg 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
+Module PC 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
+Module Mux2to1_16bit 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 1     
+Module Memory 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 258   
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 8     
+Module Mux3to1_8bit 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input      8 Bit        Muxes := 1     
+Module MicroPCReg 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
+Module MicroCode 
+Detailed RTL Component Info : 
++---Muxes : 
+	 256 Input     21 Bit        Muxes := 1     
+Module Incrementer 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 1     
+Module Mux2to1_3bit 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      3 Bit        Muxes := 1     
+Module Mux3to1_16bit 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input     16 Bit        Muxes := 1     
+Module ALU 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     17 Bit       Adders := 2     
+	   2 Input     16 Bit       Adders := 1     
++---XORs : 
+	   2 Input     16 Bit         XORs := 1     
++---Muxes : 
+	   8 Input     16 Bit        Muxes := 1     
+	  11 Input      3 Bit        Muxes := 1     
+	  11 Input      1 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5583] The signal RegFile/regs_reg_1 is implemented as block RAM but is better mapped onto distributed LUT RAM for the following reason(s): The depth (3 address bits) is shallow. Please use attribute (* ram_style = "distributed" *) to instruct Vivado to infer distributed LUT RAM.
+INFO: [Synth 8-5583] The signal RegFile/regs_reg_2 is implemented as block RAM but is better mapped onto distributed LUT RAM for the following reason(s): The depth (3 address bits) is shallow. Please use attribute (* ram_style = "distributed" *) to instruct Vivado to infer distributed LUT RAM.
+INFO: [Synth 8-3971] The signal "Processor/RegFile/regs_reg" was recognized as a true dual port RAM template.
+INFO: [Synth 8-5583] The signal RegFile/regs_reg_1 is implemented as block RAM but is better mapped onto distributed LUT RAM for the following reason(s): The depth (3 address bits) is shallow. Please use attribute (* ram_style = "distributed" *) to instruct Vivado to infer distributed LUT RAM.
+INFO: [Synth 8-5583] The signal RegFile/regs_reg_2 is implemented as block RAM but is better mapped onto distributed LUT RAM for the following reason(s): The depth (3 address bits) is shallow. Please use attribute (* ram_style = "distributed" *) to instruct Vivado to infer distributed LUT RAM.
+INFO: [Synth 8-3971] The signal "Processor/RegFile/regs_reg" was recognized as a true dual port RAM template.
+INFO: [Synth 8-4652] Swapped enable and write-enable on 2 RAM instances of RAM RegFile/regs_reg to conserve power
+WARNING: [Synth 8-3332] Sequential element (ControlMap/Mux/addrOut_reg[7]) is unused and will be removed from module Processor.
+WARNING: [Synth 8-3332] Sequential element (ControlMap/Mux/addrOut_reg[6]) is unused and will be removed from module Processor.
+WARNING: [Synth 8-3332] Sequential element (ControlMap/Mux/addrOut_reg[5]) is unused and will be removed from module Processor.
+WARNING: [Synth 8-3332] Sequential element (ControlMap/Mux/addrOut_reg[4]) is unused and will be removed from module Processor.
+WARNING: [Synth 8-3332] Sequential element (ControlMap/Mux/addrOut_reg[3]) is unused and will be removed from module Processor.
+WARNING: [Synth 8-3332] Sequential element (ControlMap/Mux/addrOut_reg[2]) is unused and will be removed from module Processor.
+WARNING: [Synth 8-3332] Sequential element (ControlMap/Mux/addrOut_reg[1]) is unused and will be removed from module Processor.
+WARNING: [Synth 8-3332] Sequential element (ControlMap/Mux/addrOut_reg[0]) is unused and will be removed from module Processor.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:27 . Memory (MB): peak = 999.527 ; gain = 393.203
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Preliminary Mapping  Report (see note below)
+-------NONE-------
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6837] The timing for the instance i_5/RegFile/regs_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_5/RegFile/regs_reg_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:31 ; elapsed = 00:00:33 . Memory (MB): peak = 999.527 ; gain = 393.203
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:35 ; elapsed = 00:00:37 . Memory (MB): peak = 1050.391 ; gain = 444.066
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping  Report
+-------NONE-------
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6837] The timing for the instance RegFile/regs_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance RegFile/regs_reg_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:38 ; elapsed = 00:00:40 . Memory (MB): peak = 1055.168 ; gain = 448.844
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:40 ; elapsed = 00:00:42 . Memory (MB): peak = 1059.828 ; gain = 453.504
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:40 ; elapsed = 00:00:42 . Memory (MB): peak = 1059.828 ; gain = 453.504
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:40 ; elapsed = 00:00:43 . Memory (MB): peak = 1059.828 ; gain = 453.504
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:40 ; elapsed = 00:00:43 . Memory (MB): peak = 1059.828 ; gain = 453.504
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:41 ; elapsed = 00:00:43 . Memory (MB): peak = 1059.828 ; gain = 453.504
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:41 ; elapsed = 00:00:43 . Memory (MB): peak = 1059.828 ; gain = 453.504
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |BUFG     |     1|
+|2     |CARRY4   |    14|
+|3     |LUT1     |     6|
+|4     |LUT2     |    11|
+|5     |LUT3     |   109|
+|6     |LUT4     |    82|
+|7     |LUT5     |   319|
+|8     |LUT6     |  1493|
+|9     |MUXF7    |   560|
+|10    |MUXF8    |   256|
+|11    |RAMB18E1 |     2|
+|12    |FDRE     |  4200|
+|13    |IBUF     |    17|
+|14    |OBUF     |    16|
++------+---------+------+
+
+Report Instance Areas: 
++------+-------------+---------------+------+
+|      |Instance     |Module         |Cells |
++------+-------------+---------------+------+
+|1     |top          |               |  7086|
+|2     |  ALUmap     |ALU            |    10|
+|3     |  ALUout     |Reg            |   662|
+|4     |  ControlMap |ControlUnit    |   194|
+|5     |    PCReg    |MicroPCReg     |   194|
+|6     |  IR         |InstructionReg |    17|
+|7     |  MDR        |Reg_0          |    32|
+|8     |  MemMap     |Memory         |  6032|
+|9     |  PCMap      |PC             |    42|
+|10    |  RegFile    |RegisterFile   |    62|
++------+-------------+---------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:41 ; elapsed = 00:00:43 . Memory (MB): peak = 1059.828 ; gain = 453.504
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 9 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:33 ; elapsed = 00:00:40 . Memory (MB): peak = 1059.828 ; gain = 304.301
+Synthesis Optimization Complete : Time (s): cpu = 00:00:41 ; elapsed = 00:00:43 . Memory (MB): peak = 1059.828 ; gain = 453.504
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 832 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'Processor' is not ideal for floorplanning, since the cellview 'Memory' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 1 inverter(s) to 2 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1076.887 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+79 Infos, 10 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:46 ; elapsed = 00:00:50 . Memory (MB): peak = 1076.887 ; gain = 745.758
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1076.887 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/giuli/Downloads/cpu_phase2_2/cpu_phase2/cpu_phase2.runs/synth_1/Processor.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file Processor_utilization_synth.rpt -pb Processor_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Apr 14 02:21:13 2020...
